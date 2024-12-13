@@ -211,3 +211,29 @@ The apple will drop from the tree into the water.
 3. script.js - Prepared for future interactivity
 
 Note: All animations are currently CSS-based for optimal performance.
+
+Latest Updates (December 13, 2024):
+
+2. Apple Animation Enhancement
+   - Refined apple floating animation with natural side-to-side movement
+   - Increased animation duration to 12 seconds for smoother motion
+   - Added progressive scaling effect (1x to 4x) as apple moves down
+   - Coordinated with sun rise animation (starts after sun completes)
+
+3. Welcome Text Addition
+   - Added "Welcome to Elgin Hills" text using Google Fonts (Satisfy)
+   - Text appears after apple animation completes
+   - Positioned below sun with custom offset
+   - Font size: 72px for clear visibility
+   - Fade-in animation with subtle scale effect
+
+4. Animation Timing Sequence
+   - Sun rise: 0-5 seconds
+   - Apple float: 5-17 seconds
+   - Welcome text fade: 17-19 seconds
+
+5. Visual Refinements
+   - Adjusted sun transparency for softer appearance
+   - Fine-tuned apple's starting position (68% from top)
+   - Enhanced side-to-side movement amplitude for natural flow
+   - Optimized welcome text position for visual balance
