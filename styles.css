@@ -79,17 +79,24 @@ body {
 
 .welcome {
     position: absolute;
-    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 56px;
+    top: calc(50% - 76px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     text-align: center;
-    font-family: 'Satisfy', cursive;
-    font-size: 72px;
-    color: #4a3000;
-    left: calc(50% - 38px);
-    top: 45%;
-    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: #2c1810;
     opacity: 0;
-    animation: welcomeFade 2s ease-in forwards;
-    animation-delay: 17s;
+    animation: simpleFade 1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes simpleFade {
+    to {
+        opacity: 1;
+    }
 }
 
 /* Original Desktop Animations */
@@ -180,6 +187,18 @@ body {
 
 /* Mobile-Only Overrides */
 @media screen and (max-width: 768px) {
+    /* Mobile welcome text */
+    .welcome {
+        font-size: 24px;
+        top: 20%;
+    }
+
+    @keyframes simpleFade {
+        to {
+            opacity: 1;
+        }
+    }
+
     /* These styles ONLY apply on mobile */
     .scene {
         height: 100vh;
@@ -203,15 +222,6 @@ body {
     .apple {
         width: 40px;
         height: 40px;
-    }
-
-    .welcome {
-        font-size: 29px;
-        width: 80%;
-        left: 50%;
-        top: 25%;
-        white-space: nowrap;
-        animation-delay: 12s !important;  /* Override desktop delay */
     }
 
     /* Mobile-specific animation overrides */
@@ -276,6 +286,24 @@ body {
             transform: translate(-50%, -50%) scale(3.6);
         }
     }
+}
+
+@keyframes typewriter {
+    from {
+        opacity: 0;
+        transform: translateY(-8px) rotate(-2deg);  /* Slight rotation for natural feel */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Remove all sound button related styles */
+.sound-button,
+.sound-on,
+.sound-off {
+    display: none;
 }
 
 /* Ensure smooth scaling across devices */

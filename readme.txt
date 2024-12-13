@@ -182,87 +182,55 @@ The sun will rise with glowing rays.
 The river will appear to flow dynamically.
 The apple will drop from the tree into the water.
 
-# Progress Update - December 13, 2024
+# Elgin Hills Animation
 
-## Completed Features
-1. Sun Animation Implementation
-   - Created basic HTML structure with scene container
-   - Implemented CSS animations for the sun rising effect
-   - Added glowing rays effect around the sun
-   - Fine-tuned sun position and size to match the background image perfectly
+A landing page animation for Elgin Hills featuring a rising sun, floating apple, and ambient nature sounds.
 
-## Current State
-- The sun now rises from behind the mountains
-- Animation timing: 5 seconds for the complete rise
-- Sun specifications:
-  - Size: 188px diameter
-  - Position: Starts at 50% from bottom, rises to 62%
-  - Horizontal position: 49% from left
-  - Glowing effect: 263px diameter rays with pulsing animation
+## Features
 
-## Next Steps
-1. Implement river flow animation
-2. Add apple dropping animation
-3. Fine-tune any remaining visual elements
+### Visual Elements
+- Animated sunrise effect
+- Floating apple animation
+- Responsive design for both desktop and mobile
+- Handwritten welcome text using Dancing Script font
 
-## Files Created/Modified
-1. index.html - Basic structure
-2. styles.css - Animation and styling
-3. script.js - Prepared for future interactivity
+### Audio
+- Ambient nature sounds (river and birds)
+- Cross-browser audio support
+- Automatic playback with fallback to user interaction
+- Volume and playback state persistence
 
-Note: All animations are currently CSS-based for optimal performance.
+### Mobile Optimization
+- Responsive design adapts to screen size
+- Touch-friendly interactions
+- Optimized animations for mobile devices
+- Mobile-specific text positioning and sizing
 
-Latest Updates (December 13, 2024):
+## Recent Updates (December 13, 2024)
+1. Text Styling
+   - Added Dancing Script font for handwritten appearance
+   - Desktop: Large centered text (56px) positioned above sun
+   - Mobile: Smaller text (24px) optimized for mobile view
+   - Simple fade-in animation with 3-second delay
 
-2. Apple Animation Enhancement
-   - Refined apple floating animation with natural side-to-side movement
-   - Increased animation duration to 12 seconds for smoother motion
-   - Added progressive scaling effect (1x to 4x) as apple moves down
-   - Coordinated with sun rise animation (starts after sun completes)
+2. Audio Improvements
+   - Enhanced cross-browser audio support
+   - Automatic playback after 2 seconds
+   - Fallback to play on first user interaction
+   - Handles browser autoplay policies
+   - Maintains playback state during page visibility changes
 
-3. Welcome Text Addition
-   - Added "Welcome to Elgin Hills" text using Google Fonts (Satisfy)
-   - Text appears after apple animation completes
-   - Positioned below sun with custom offset
-   - Font size: 72px for clear visibility
-   - Fade-in animation with subtle scale effect
+3. Mobile Enhancements
+   - Optimized text positioning for mobile devices
+   - Improved responsive layout
+   - Better touch interaction handling
 
-4. Animation Timing Sequence
-   - Sun rise: 0-5 seconds
-   - Apple float: 5-17 seconds
-   - Welcome text fade: 17-19 seconds
+## Browser Support
+- Works on modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile-optimized for iOS and Android devices
+- Handles various autoplay policies across browsers
 
-5. Visual Refinements
-   - Adjusted sun transparency for softer appearance
-   - Fine-tuned apple's starting position (68% from top)
-   - Enhanced side-to-side movement amplitude for natural flow
-   - Optimized welcome text position for visual balance
-
-Mobile Optimization Updates (December 13, 2024):
-
-1. Responsive Design Implementation
-   - Added mobile-specific styles using CSS media queries
-   - Triggers for screens smaller than 768px width
-   - Preserves desktop experience while optimizing for mobile
-
-2. Mobile Sun Animation Adjustments
-   - Reduced sun size to 47px (quarter of desktop size)
-   - Adjusted sun rays to 65px for proportion
-   - Modified animation path:
-     * Starts 2cm higher
-     * Moves up only 1cm
-     * Smoother, more contained movement
-   - Optimized final positions for mobile viewport
-
-3. Mobile Welcome Text Optimization
-   - Reduced font size by 20% (29px)
-   - Positioned higher in viewport (25% from top)
-   - Appears 5 seconds earlier than desktop version
-   - Improved readability on smaller screens
-
-4. Mobile-Specific Timing Sequence
-   - Sun rise: 0-5 seconds
-   - Apple float: 5-17 seconds
-   - Welcome text: Appears at 12 seconds (5s earlier than desktop)
-
-Note: All mobile optimizations are implemented through CSS media queries, ensuring the desktop version remains unchanged while providing an optimized experience for mobile users.
+## Notes
+- First-time visitors may need to interact with the page to start audio (browser security requirement)
+- Audio will automatically resume if interrupted
+- Animations and timing are optimized for both desktop and mobile experiences

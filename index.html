@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elgin Hills Animation</title>
+    <title>Animation</title>
+    <link rel="icon" href="data:image/x-icon;base64,">
+    <link rel="shortcut icon" href="data:image/x-icon;base64,">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="scene">
-        <!-- Static Background -->
-        <div class="background"></div>
-        
-        <!-- Animated Elements -->
+        <img src="Pictures/background.png" alt="" class="background">
         <div class="sun"></div>
         <div class="rays"></div>
+        <div class="apple"></div>
+        <div class="welcome">Welcome to Elgin Hills</div>
+        <audio id="natureSound" preload="auto" playsinline muted>
+            <source src="sounds/767320__hano_van_dalen__watrflow-ext_small-flowing-creek_hvd_owsfx_loop.wav" type="audio/wav">
+        </audio>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
